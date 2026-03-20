@@ -357,13 +357,13 @@ export class GameController extends Component {
         const boardScale = Math.min(1, maxBoardWidth / boardSize.width, maxBoardHeight / boardSize.height);
 
         this.boardRoot.setScale(new Vec3(boardScale, boardScale, 1));
-        this.boardRoot.setPosition(0, -10, 0);
+        this.boardRoot.setPosition(0, 10, 0);
         this.gridManager.setTransform(this.boardRoot.position.clone(), this.boardRoot.scale.clone());
         console.log('[GameController] board layout', {
             visibleSize,
             boardSize,
             boardScale,
-            boardPosition: { x: 0, y: -10 },
+            boardPosition: { x: 0, y: 10 },
         });
     }
 

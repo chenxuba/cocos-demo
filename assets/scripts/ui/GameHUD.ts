@@ -65,13 +65,13 @@ export class GameHUD {
 
         this.createPauseButton(new Vec3(420, -108, 0), onPause);
 
-        this.statusPanel = this.createStatusPanel(new Vec3(0, -size.height / 2 + 24, 0));
+        this.statusPanel = this.createStatusPanel(new Vec3(0, -size.height / 2 + 38, 0));
         this.statusLabel = this.createLabel(
             this.root,
             '准备开始',
             22,
             BOARD_THEME.warning,
-            new Vec3(0, -size.height / 2 + 24, 0),
+            new Vec3(0, -size.height / 2 + 38, 0),
             520,
             42,
         );

@@ -40,15 +40,15 @@ export class PausePanel {
         graphics.roundRect(-228, -158, 456, 316, 34);
         graphics.stroke();
 
-        this.titleLabel = this.createLabel(panel, '游戏暂停', 40, BOARD_THEME.textPrimary, new Vec3(0, 92, 0));
+        this.titleLabel = this.createLabel(panel, '游戏暂停', 40, BOARD_THEME.textPrimary, new Vec3(0, 112, 0));
         this.titleLabel.isBold = true;
 
-        const hint = this.createLabel(panel, '继续、重开或回到首页', 20, BOARD_THEME.textSecondary, new Vec3(0, 48, 0));
+        const hint = this.createLabel(panel, '继续、重开或回到首页', 20, BOARD_THEME.textSecondary, new Vec3(0, 68, 0));
         hint.isBold = false;
 
-        this.continueButton = this.createButton(panel, new Vec3(0, -12, 0), BOARD_THEME.accent, '继续游戏');
-        this.restartButton = this.createButton(panel, new Vec3(0, -74, 0), BOARD_THEME.warning, '重新开始');
-        this.homeButton = this.createButton(panel, new Vec3(0, -136, 0), BOARD_THEME.danger, '返回首页');
+        this.continueButton = this.createButton(panel, new Vec3(0, 8, 0), BOARD_THEME.accent, '继续游戏');
+        this.restartButton = this.createButton(panel, new Vec3(0, -54, 0), BOARD_THEME.warning, '重新开始');
+        this.homeButton = this.createButton(panel, new Vec3(0, -116, 0), BOARD_THEME.danger, '返回首页');
     }
 
     public show(onContinue: () => void, onRestart: () => void, onHome: () => void): void {
