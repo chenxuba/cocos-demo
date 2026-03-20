@@ -1,0 +1,10 @@
+{
+  "level": 1,
+  "row": 8,
+  "col": 8,
+  "maxMoves": 20,
+  "goalType": "score",
+  "goalValue": 3000,
+  "gemTypes": [0, 1, 2, 3, 4, 5],
+  "cellSize": 72
+}
